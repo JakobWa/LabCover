@@ -1,0 +1,60 @@
+\documentclass{article}
+% chktex-file 44
+
+\usepackage[english]{babel} % Replace `english' with e.g. `spanish' to change the document language
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry} % Page & Margin setup
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{array}
+
+\title{Your Paper}
+\author{You}
+
+\graphicspath{ {./images/} } % Or wherever they are
+
+\begin{document}
+
+% HTL - LabCover
+\begin{center}
+    \begin{tabularx}{\textwidth}{ |X|X|X| } \hline
+        \multicolumn{2}{|c|}{\makecell{ \Large \textbf{Protocol for lab-exercise:} \\ \\ \textbf{LABEX}}} &  
+            \begin{minipage}{.3\textwidth}
+                \includegraphics[width=\linewidth]{htl_logo.jpg}
+            \end{minipage} \\ \hline 
+
+        Group/Class: & Script Writer: & Signature:              \\ && \\ \makecell{\textbf{Grp/Cls}}    & \makecell{\textbf{NAME1}} & \\ && \\ \hline
+        Exercise Date/Hand-in Date: & Team Member: & Signature: \\ && \\ \makecell{\textbf{D1/D2}}      & \makecell{\textbf{NAME2}} & \\ && \\ \hline
+        Teacher: & Team Member: & Signature:                    \\ && \\ \makecell{\textbf{TEACH}}      & \makecell{\textbf{NAME3}} & \\ && \\ \hline
+        Grade: & Team Member: & Signature:                      \\ && \\                                & \makecell{\textbf{NAME4}} & \\ && \\ \hline
+
+        \multicolumn{3}{|c|}{\makecell{ \\ \Large \textbf{Device under Test:} \\ \\ DUT1 \\ \\}} \\ \hline 
+        \multicolumn{3}{|c|}{\makecell{ \\ \Large \textbf{Used Equipment:} \\ \\ 
+            \begin{tabularx}{.6\textwidth}{ X|X|X }
+                \makecell{\textbf{Device}} & \makecell{\textbf{Company}} & \makecell{\textbf{Type}} \\ \hline
+                & & \\ \hline
+                & & \\ \hline
+                & & \\ \hline
+                & & \\ 
+                \end{tabularx}
+        \\ \\}} \\ \hline 
+    \end{tabularx}
+\end{center}
+% HTL - LabCover
+
+\pagebreak
+
+\tableofcontents
+\listoffigures
+
+\pagebreak
+
+\section{One}
+\subsection{OneOne}
+
+\end{document}
